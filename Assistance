@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Confidentialité - Neo Run</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .last-updated {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        h2 {
+            color: #764ba2;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #667eea;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background: #f0f4ff;
+            padding: 20px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .important {
+            background: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .contact {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .contact a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        
+        strong {
+            color: #764ba2;
+        }
+        
+        .summary {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .summary h2 {
+            margin-top: 0;
+            border-bottom: none;
+        }
+        
+        .checkmark {
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        .crossmark {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 POLITIQUE DE CONFIDENTIALITÉ</h1>
+        <h1 style="font-size: 1.5em; margin-top: 10px;">Neo Run</h1>
+        <p class="last-updated">Dernière mise à jour : 13 octobre 2025</p>
+
+        <div class="summary">
+            <h2>📋 RÉSUMÉ RAPIDE</h2>
+            <p><strong>Ce que nous collectons :</strong></p>
+            <ul>
+                <li><span class="checkmark">✓</span> Progression du jeu (scores, niveaux, skins)</li>
+                <li><span class="checkmark">✓</span> Historique d'achats intégrés</li>
+                <li><span class="checkmark">✓</span> Données d'utilisation anonymes</li>
+            </ul>
+            
+            <p><strong>Ce que nous NE collectons PAS :</strong></p>
+            <ul>
+                <li><span class="crossmark">✗</span> Nom, email, téléphone</li>
+                <li><span class="crossmark">✗</span> Localisation GPS</li>
+                <li><span class="crossmark">✗</span> Contacts ou photos</li>
+                <li><span class="crossmark">✗</span> Données de paiement</li>
+            </ul>
+        </div>
+
+        <h2>1. INTRODUCTION</h2>
+        <p>Bienvenue sur Neo Run. Nous respectons votre vie privée et nous nous engageons à protéger vos données personnelles. Cette politique de confidentialité vous informe sur la manière dont nous traitons vos données personnelles lorsque vous utilisez notre application mobile Neo Run.</p>
+        
+        <div class="highlight">
+            <p><strong>Éditeur de l'Application :</strong><br>
+            Hugo Moriceau<br>
+            Email : <a href="mailto:hugomoriceau@gmail.com">hugomoriceau@gmail.com</a></p>
+        </div>
+
+        <h2>2. DONNÉES QUE NOUS COLLECTONS</h2>
+        
+        <h3>2.1 Données collectées automatiquement</h3>
+        <p>Lorsque vous utilisez Neo Run, nous collectons automatiquement :</p>
+        
+        <p><strong>Progression du jeu :</strong></p>
+        <ul>
+            <li>Niveau actuel</li>
+            <li>Points d'expérience (XP)</li>
+            <li>Score le plus élevé</li>
+            <li>Distance parcourue</li>
+            <li>Pièces collectées</li>
+            <li>Skins débloqués</li>
+            <li>Missions complétées</li>
+        </ul>
+        
+        <p><strong>Données d'utilisation :</strong></p>
+        <ul>
+            <li>Fréquence d'utilisation de l'application</li>
+            <li>Durée des sessions de jeu</li>
+            <li>Fonctionnalités utilisées</li>
+            <li>Données de performance (crashs, bugs)</li>
+        </ul>
+
+        <h3>2.2 Données fournies par l'utilisateur</h3>
+        <p><strong>Achats intégrés :</strong></p>
+        <ul>
+            <li>Historique des achats effectués dans l'application</li>
+            <li>Type d'achat (pièces, Pass VIP, skins, etc.)</li>
+            <li>Date et heure des transactions</li>
+        </ul>
+        
+        <div class="important">
+            <p><strong>⚠️ Remarque importante :</strong> Nous ne stockons JAMAIS les informations de paiement. Tous les paiements sont traités de manière sécurisée par Apple via l'App Store.</p>
+        </div>
+
+        <h3>2.3 Données que nous NE collectons PAS</h3>
+        <p>Nous ne collectons PAS :</p>
+        <ul>
+            <li>Votre nom ou prénom</li>
+            <li>Votre adresse email (sauf si vous nous contactez)</li>
+            <li>Votre numéro de téléphone</li>
+            <li>Votre adresse postale</li>
+            <li>Vos photos ou contacts</li>
+            <li>Votre localisation géographique précise</li>
+        </ul>
+
+        <h2>3. COMMENT NOUS UTILISONS VOS DONNÉES</h2>
+        
+        <h3>3.1 Finalités du traitement</h3>
+        <p>Nous utilisons vos données pour :</p>
+        
+        <p><strong>Fonctionnement du jeu :</strong></p>
+        <ul>
+            <li>Sauvegarder votre progression</li>
+            <li>Synchroniser vos données entre sessions</li>
+            <li>Débloquer du contenu (niveaux, skins, missions)</li>
+            <li>Afficher vos statistiques et accomplissements</li>
+        </ul>
+        
+        <p><strong>Amélioration de l'expérience :</strong></p>
+        <ul>
+            <li>Améliorer les performances de l'application</li>
+            <li>Corriger les bugs et problèmes techniques</li>
+            <li>Développer de nouvelles fonctionnalités</li>
+            <li>Équilibrer la difficulté du jeu</li>
+        </ul>
+        
+        <p><strong>Traitement des achats :</strong></p>
+        <ul>
+            <li>Valider vos achats intégrés</li>
+            <li>Débloquer le contenu acheté</li>
+            <li>Gérer les abonnements (Pass VIP)</li>
+        </ul>
+
+        <h2>4. STOCKAGE ET SÉCURITÉ DES DONNÉES</h2>
+        
+        <h3>4.1 Où sont stockées vos données</h3>
+        <p><strong>Stockage local :</strong> La majorité de vos données (progression, scores, skins) sont stockées localement sur votre appareil iOS. Ces données restent sur votre appareil et ne sont pas transférées sur nos serveurs.</p>
+        
+        <p><strong>Stockage Apple :</strong> L'historique des achats est géré par Apple via l'App Store. Apple applique ses propres politiques de confidentialité.</p>
+
+        <h3>4.2 Sécurité des données</h3>
+        <p>Nous mettons en œuvre des mesures de sécurité appropriées pour protéger vos données :</p>
+        <ul>
+            <li>Chiffrement des données sensibles</li>
+            <li>Accès restreint aux données</li>
+            <li>Surveillance des accès non autorisés</li>
+            <li>Mises à jour régulières de sécurité</li>
+        </ul>
+
+        <h2>5. PARTAGE DE VOS DONNÉES</h2>
+        
+        <h3>5.1 Nous ne vendons PAS vos données</h3>
+        <p>Nous ne vendons, ne louons, ni n'échangeons vos données personnelles à des tiers à des fins commerciales.</p>
+
+        <h3>5.2 Services tiers utilisés</h3>
+        <p><strong>Apple StoreKit :</strong></p>
+        <ul>
+            <li>Finalité : Gestion des achats intégrés</li>
+            <li>Données partagées : Historique d'achat</li>
+            <li>Politique : <a href="https://www.apple.com/legal/privacy/" target="_blank">Politique de confidentialité d'Apple</a></li>
+        </ul>
+        
+        <p><strong>Apple Game Center (optionnel) :</strong></p>
+        <ul>
+            <li>Finalité : Classements et succès (si activé par l'utilisateur)</li>
+            <li>Données partagées : Scores, succès</li>
+            <li>Politique : <a href="https://www.apple.com/legal/privacy/" target="_blank">Politique de confidentialité d'Apple</a></li>
+        </ul>
+
+        <h2>6. VOS DROITS</h2>
+        <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :</p>
+        
+        <ul>
+            <li><strong>Droit d'accès :</strong> Vous pouvez demander une copie des données que nous détenons sur vous</li>
+            <li><strong>Droit de rectification :</strong> Vous pouvez demander la correction de données inexactes</li>
+            <li><strong>Droit à l'effacement :</strong> Vous pouvez demander la suppression de vos données personnelles</li>
+            <li><strong>Droit à la limitation :</strong> Vous pouvez demander la limitation du traitement</li>
+            <li><strong>Droit à la portabilité :</strong> Vous pouvez demander à recevoir vos données</li>
+            <li><strong>Droit d'opposition :</strong> Vous pouvez vous opposer au traitement</li>
+        </ul>
+        
+        <div class="highlight">
+            <p><strong>Comment supprimer vos données :</strong></p>
+            <ul>
+                <li><strong>Données de jeu :</strong> Désinstallez l'application de votre appareil</li>
+                <li><strong>Données d'achat :</strong> Contactez-nous à hugomoriceau@gmail.com</li>
+            </ul>
+        </div>
+
+        <h2>7. PROTECTION DES MINEURS</h2>
+        <p>Neo Run est classé 4+ et est approprié pour tous les âges, y compris les enfants.</p>
+        <p>Nous ne collectons pas sciemment de données personnelles identifiables d'enfants de moins de 13 ans sans le consentement parental.</p>
+        <p>Si vous êtes parent et pensez que votre enfant nous a fourni des données personnelles, contactez-nous immédiatement.</p>
+
+        <h2>8. MODIFICATIONS DE CETTE POLITIQUE</h2>
+        <p>Nous pouvons modifier cette politique de confidentialité de temps en temps pour refléter les changements dans nos pratiques ou les évolutions légales.</p>
+        <p>En cas de modification importante, la date de « Dernière mise à jour » sera modifiée et nous vous notifierons via l'application si possible.</p>
+
+        <h2>9. CONTACT</h2>
+        <div class="contact">
+            <p><strong>Pour toute question concernant cette politique de confidentialité :</strong></p>
+            <p style="font-size: 1.2em; margin-top: 15px;">
+                📧 Email : <a href="mailto:hugomoriceau@gmail.com">hugomoriceau@gmail.com</a>
+            </p>
+            <p style="margin-top: 10px;">Objet : « Confidentialité Neo Run »</p>
+            <p style="margin-top: 10px;"><em>Délai de réponse : 30 jours maximum</em></p>
+        </div>
+
+        <h2>10. DROIT DE RÉCLAMATION</h2>
+        <p>Si vous estimez que vos droits ne sont pas respectés, vous pouvez déposer une réclamation auprès de :</p>
+        <div class="highlight">
+            <p><strong>CNIL (Commission Nationale de l'Informatique et des Libertés)</strong><br>
+            Site web : <a href="https://www.cnil.fr/" target="_blank">https://www.cnil.fr/</a><br>
+            Adresse : 3 Place de Fontenoy, TSA 80715, 75334 PARIS CEDEX 07</p>
+        </div>
+
+        <h2>11. CONSENTEMENT</h2>
+        <p>En utilisant Neo Run, vous reconnaissez avoir lu et compris cette politique de confidentialité et vous acceptez la collecte et l'utilisation de vos données comme décrit dans cette politique.</p>
+        <p><strong>Si vous n'acceptez pas cette politique, veuillez ne pas utiliser l'application.</strong></p>
+
+        <hr style="margin: 40px 0; border: none; border-top: 2px solid #eee;">
+
+        <div class="contact">
+            <h3 style="color: #667eea; margin-top: 0;">Merci d'utiliser Neo Run ! 🎮</h3>
+            <p style="margin-top: 15px;">Pour toute question : <a href="mailto:hugomoriceau@gmail.com">hugomoriceau@gmail.com</a></p>
+            <p style="margin-top: 20px; font-size: 0.9em; color: #666;">
+                <strong>Version :</strong> 1.0 | 
+                <strong>Dernière mise à jour :</strong> 13 octobre 2025
+            </p>
+            <p style="margin-top: 10px; font-size: 0.85em; color: #999; font-style: italic;">
+                Conforme au RGPD (Règlement Général sur la Protection des Données)
+            </p>
+        </div>
+    </div>
+</body>
+</html>
