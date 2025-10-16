@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Neo Run</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .header h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .game-title {
+            font-size: 1.2em;
+            color: #764ba2;
+            font-weight: 600;
+        }
+        
+        .last-updated {
+            background: #f0f4ff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            color: #667eea;
+            font-weight: 500;
+            text-align: center;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f4ff;
+        }
+        
+        .section h3 {
+            color: #764ba2;
+            font-size: 1.3em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .section p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .section ul {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        
+        .section li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight-box {
+            background: #f0f4ff;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+        }
+        
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .contact-box h2 {
+            color: white;
+            margin-bottom: 15px;
+        }
+        
+        .contact-box a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            border-bottom: 2px solid white;
+            padding-bottom: 2px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #f0f4ff;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .section h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔒 Privacy Policy</h1>
+            <div class="game-title">Neo Run</div>
+        </div>
+        
+        <div class="last-updated">
+            Last Updated: January 16, 2025
+        </div>
+        
+        <div class="section">
+            <h2>Introduction</h2>
+            <p>
+                Welcome to Neo Run! This Privacy Policy explains how we collect, use, and protect 
+                your information when you use our mobile game application. We are committed to 
+                protecting your privacy and ensuring you have a safe gaming experience.
+            </p>
+            <p>
+                By downloading and using Neo Run, you agree to the collection and use of information 
+                in accordance with this policy.
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2>Developer Information</h2>
+            <div class="highlight-box">
+                <p><strong>Developer:</strong> Hugo Moriceau</p>
+                <p><strong>Email:</strong> hugomoriceau@gmail.com</p>
+                <p><strong>App Name:</strong> Neo Run</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Information We Collect</h2>
+            
+            <h3>1. Game Progress Data</h3>
+            <p>We collect and store information about your gameplay:</p>
+            <ul>
+                <li>Current level and XP progress</li>
+                <li>Coins collected and balance</li>
+                <li>Unlocked skins and customizations</li>
+                <li>Daily mission progress</li>
+                <li>High scores and achievements</li>
+            </ul>
+            <p><strong>Storage:</strong> Stored locally on your device.</p>
+            
+            <h3>2. Purchase Information</h3>
+            <p>When you make in-app purchases:</p>
+            <ul>
+                <li>Purchase history (managed by Apple)</li>
+                <li>Transaction records</li>
+            </ul>
+            <p><strong>Note:</strong> Payment information is handled by Apple. We do not access your payment details.</p>
+            
+            <h3>3. Device Information</h3>
+            <ul>
+                <li>Device model and iOS version</li>
+                <li>Screen resolution</li>
+                <li>Language preferences</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>How We Use Your Information</h2>
+            <ul>
+                <li>Save your game progress</li>
+                <li>Process in-app purchases</li>
+                <li>Improve gameplay and fix bugs</li>
+                <li>Optimize performance</li>
+                <li>Provide customer support</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Data Storage and Security</h2>
+            <p>
+                Your game data is stored locally on your device using secure iOS storage. 
+                We implement industry-standard security measures to protect your information.
+            </p>
+            <div class="highlight-box">
+                <p><strong>Important:</strong> We do not sell, rent, or share your personal data with third parties.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Third-Party Services</h2>
+            <p>Neo Run uses:</p>
+            <ul>
+                <li><strong>Apple StoreKit:</strong> For in-app purchases</li>
+                <li><strong>Apple Game Center:</strong> Optional, for achievements</li>
+            </ul>
+            <p>We do not use advertising networks or other third-party analytics services.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Children's Privacy</h2>
+            <p>
+                Neo Run is rated 4+ and appropriate for all ages. We do not knowingly collect 
+                personal information from children under 13.
+            </p>
+            <div class="highlight-box">
+                <p>
+                    <strong>For Parents:</strong> No online features, no chat, no social media, 
+                    no personal data collection. In-app purchases can be restricted via iOS Parental Controls.
+                </p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Your Rights</h2>
+            <h3>Delete Your Data</h3>
+            <ul>
+                <li>Use "Reset Progress" in game settings</li>
+                <li>Delete the app to remove all local data</li>
+            </ul>
+            
+            <h3>Access Your Data</h3>
+            <p>View your stats and progress within the game anytime.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Changes to This Policy</h2>
+            <p>
+                We may update this Privacy Policy from time to time. We will notify you of 
+                significant changes through an in-app notification. Continued use of Neo Run 
+                constitutes acceptance of any changes.
+            </p>
+        </div>
+        
+        <div class="contact-box">
+            <h2>Contact Us</h2>
+            <p>Questions or concerns about this Privacy Policy?</p>
+            <p style="margin-top: 20px;">
+                <strong>Email:</strong><br>
+                <a href="mailto:hugomoriceau@gmail.com">hugomoriceau@gmail.com</a>
+            </p>
+            <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.9;">
+                We respond within 30 days.
+            </p>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 Hugo Moriceau. All rights reserved.</p>
+            <p style="margin-top: 10px;">Neo Run - Privacy Policy</p>
+        </div>
+    </div>
+</body>
+</html>
