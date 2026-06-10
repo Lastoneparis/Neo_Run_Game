@@ -3,196 +3,312 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neo Run - Support & Help</title>
+    <meta name="description" content="Support Center for Neo Run, the endless runner game by NeoRunCubeLab. FAQs, gameplay tips, troubleshooting, and contact information.">
+    <meta name="robots" content="index, follow">
+    <title>Support - Neo Run</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
             color: #333;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
         }
+
         .container {
+            max-width: 900px;
+            margin: 0 auto;
             background: white;
             padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
-        h1 {
-            color: #667eea;
+
+        .header {
             text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .header h1 {
+            color: #667eea;
+            font-size: 2.5em;
             margin-bottom: 10px;
         }
-        .subtitle {
-            text-align: center;
-            color: #666;
-            margin-bottom: 30px;
-        }
-        h2 {
+
+        .game-title {
+            font-size: 1.2em;
             color: #764ba2;
-            border-bottom: 2px solid #667eea;
-            padding-bottom: 10px;
-            margin-top: 30px;
+            font-weight: 600;
         }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #f0f4ff;
+            border-radius: 10px;
+        }
+
+        .intro h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f4ff;
+        }
+
         .faq-item {
             margin-bottom: 25px;
             padding: 20px;
-            background: #f8f9fa;
-            border-radius: 8px;
+            background: #f9f9ff;
+            border-radius: 10px;
             border-left: 4px solid #667eea;
         }
-        .faq-question {
-            font-weight: bold;
-            color: #333;
+
+        .faq-item h3 {
+            color: #764ba2;
+            font-size: 1.2em;
             margin-bottom: 10px;
-            font-size: 1.1em;
         }
-        .faq-answer {
+
+        .faq-item p {
             color: #555;
-            line-height: 1.8;
         }
+
+        .faq-item ul,
+        .faq-item ol {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .faq-item li {
+            margin-bottom: 5px;
+        }
+
         .contact-box {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 30px;
-            border-radius: 12px;
+            padding: 40px;
+            border-radius: 10px;
             text-align: center;
-            margin-top: 40px;
+            margin: 40px 0;
         }
+
         .contact-box h2 {
             color: white;
-            border: none;
-            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 2em;
         }
-        .email-button {
-            display: inline-block;
-            background: white;
-            color: #667eea;
-            padding: 15px 40px;
-            border-radius: 30px;
+
+        .contact-box .email {
+            font-size: 1.3em;
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 8px;
+        }
+
+        .contact-box a {
+            color: white;
             text-decoration: none;
-            font-weight: bold;
-            margin-top: 20px;
-            transition: transform 0.2s;
+            font-weight: 600;
+            border-bottom: 2px solid white;
+            padding-bottom: 2px;
         }
-        .email-button:hover {
-            transform: scale(1.05);
+
+        .tip-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin: 15px 0;
         }
-        .game-info {
+
+        .tip-box strong {
+            color: #856404;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .card {
+            background: #f0f4ff;
+            padding: 25px;
+            border-radius: 10px;
             text-align: center;
-            margin-top: 30px;
-            padding-top: 30px;
-            border-top: 1px solid #ddd;
+        }
+
+        .card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .card p {
+            color: #555;
+        }
+
+        .card a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #f0f4ff;
             color: #666;
+            font-size: 0.9em;
         }
-        ul {
-            margin-left: 20px;
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
         }
-        li {
-            margin-bottom: 8px;
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🎮 Neo Run Support</h1>
-        <p class="subtitle">Help Center & Frequently Asked Questions</p>
-
-        <h2>📧 Contact Support</h2>
-        <p>
-            Need help? Have questions? We're here to assist you!
-        </p>
-        <div class="contact-box">
-            <h2>Get in Touch</h2>
-            <p>Email our support team and we'll respond within 24-48 hours</p>
-            <a href="mailto:hugomoriceau@icloud.com" class="email-button">
-                📧 hugomoriceau@icloud.com
-            </a>
-            <p style="margin-top: 20px; font-size: 0.9em;">
-                Please include your device model and iOS version for faster assistance
-            </p>
+        <div class="header">
+            <h1><span aria-hidden="true">🎮</span> Support Center</h1>
+            <div class="game-title">Neo Run</div>
         </div>
 
-        <h2>❓ Frequently Asked Questions</h2>
-
-        <div class="faq-item">
-            <div class="faq-question">🎯 How do I play Neo Run?</div>
-            <div class="faq-answer">
-                Neo Run is an endless runner game! Swipe left/right to move your cube, 
-                avoid obstacles, and collect coins. The game gets faster as you progress. 
-                Try to beat your high score!
-            </div>
+        <div class="intro">
+            <h2>Need Help?</h2>
+            <p>Find answers to common questions below, or contact us directly!</p>
         </div>
 
-        <div class="faq-item">
-            <div class="faq-question">💰 How do I earn coins?</div>
-            <div class="faq-answer">
-                Coins are collected during gameplay by running through them. You can also:
+        <div class="section">
+            <h2><span aria-hidden="true">📚</span> Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <h3>How do I play Neo Run?</h3>
+                <p>Neo Run is an endless runner. It's simple to pick up:</p>
                 <ul>
-                    <li>Purchase coin packs in the Store tab</li>
-                    <li>Get daily bonuses with VIP Pass</li>
-                    <li>Use Coin Doubler booster for 2x coins</li>
+                    <li><strong>Tap</strong> to jump</li>
+                    <li><strong>Double-tap</strong> for a double jump</li>
+                    <li><strong>Triple-tap</strong> for a triple jump</li>
+                    <li>Avoid obstacles, collect coins, and survive as long as you can!</li>
+                </ul>
+                <p style="margin-top: 10px;">The game speeds up the longer you run, so timing your jumps is key to beating your high score.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I earn coins?</h3>
+                <p>Coins are collected during gameplay by running through them. You can also:</p>
+                <ul>
+                    <li>Complete daily missions for bonus coins</li>
+                    <li>Build combos for coin multipliers</li>
+                    <li>Get daily bonus coins with the VIP Pass</li>
+                    <li>Purchase coin packs in the Shop</li>
                 </ul>
             </div>
-        </div>
 
-        <div class="faq-item">
-            <div class="faq-question">🛍️ What can I buy with coins?</div>
-            <div class="faq-answer">
-                Use coins in the Shop to purchase:
+            <div class="faq-item">
+                <h3>How do I unlock new skins?</h3>
+                <p>
+                    Collect coins during gameplay and use them to purchase skins in the Shop.
+                    You can also earn coins by completing daily missions or purchasing coin packs.
+                    There are 20+ unique skins to collect!
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What are daily missions?</h3>
+                <p>
+                    Daily missions refresh every 24 hours and give you specific challenges to complete.
+                    Finish missions to earn extra coins and XP! Check the Missions tab to see your current tasks.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How does the level system work?</h3>
+                <p>
+                    As you play, you earn XP based on your performance. Collect more coins, build combos,
+                    and survive longer to earn more XP. Level up to unlock new content and features!
+                </p>
+                <div class="tip-box">
+                    <strong><span aria-hidden="true">💡</span> Tip:</strong> The VIP Pass gives you 2x XP to level up faster!
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h3>What are power-ups and how do I use them?</h3>
+                <p>Power-ups give you special abilities during gameplay:</p>
                 <ul>
-                    <li><strong>Power-ups:</strong> Speed Boost (50 coins), Shield (75 coins), 
-                        Coin Magnet (60 coins)</li>
-                    <li><strong>Skins:</strong> Customize your cube's appearance</li>
-                    <li><strong>Characters:</strong> Unlock different playable characters</li>
-                    <li><strong>Trails:</strong> Add visual effects to your cube</li>
+                    <li><strong>Speed Boost:</strong> Run faster temporarily</li>
+                    <li><strong>Shield:</strong> Protect yourself from one obstacle</li>
+                    <li><strong>Coin Magnet:</strong> Auto-collect nearby coins</li>
+                    <li><strong>2x Coins:</strong> Double coin collection (VIP perk)</li>
                 </ul>
+                <p>Purchase and activate power-ups from the Shop before starting a run!</p>
             </div>
-        </div>
 
-        <div class="faq-item">
-            <div class="faq-question">🔄 How do I restore my purchases?</div>
-            <div class="faq-answer">
-                If you purchased "Remove Ads" or "VIP Pass" and reinstalled the app:
-                <ol>
-                    <li>Open the Store tab</li>
-                    <li>Scroll to the bottom</li>
-                    <li>Tap "Restore Purchases"</li>
-                    <li>Sign in with your Apple ID if prompted</li>
-                </ol>
-                Your non-consumable purchases will be restored automatically.
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question">🚫 How do I remove ads?</div>
-            <div class="faq-answer">
-                Go to Store → Premium section → Purchase "Remove Ads" for $2.99. 
-                This is a one-time purchase that permanently removes all advertisements 
-                from the game forever.
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question">👑 What is VIP Pass?</div>
-            <div class="faq-answer">
-                VIP Pass ($7.99/month) includes:
+            <div class="faq-item">
+                <h3>How do in-app purchases work?</h3>
+                <p>Neo Run is free to play! In-app purchases are optional and include:</p>
                 <ul>
-                    <li>No ads</li>
-                    <li>2x coins permanently (all games)</li>
-                    <li>Exclusive characters</li>
-                    <li>Daily bonus coins (100 per day)</li>
+                    <li>Coin packs to unlock skins faster</li>
+                    <li>VIP Pass for 2x XP, 2x coins, and exclusive benefits</li>
+                    <li>Extra lives to continue your run</li>
                 </ul>
-                It's a subscription that renews monthly. Cancel anytime in iOS Settings.
+                <p>All purchases are processed securely through Apple.</p>
             </div>
-        </div>
 
-        <div class="faq-item">
-            <div class="faq-question">🔐 How do I cancel my VIP Pass subscription?</div>
-            <div class="faq-answer">
-                To cancel your subscription:
+            <div class="faq-item">
+                <h3>What is the VIP Pass?</h3>
+                <p>The VIP Pass ($7.99/month) is an auto-renewing subscription that includes:</p>
+                <ul>
+                    <li>2x XP for faster leveling</li>
+                    <li>2x coins on every run</li>
+                    <li>Exclusive characters and skins</li>
+                    <li>Daily bonus coins</li>
+                </ul>
+                <p>It renews monthly and you can cancel anytime in your iOS Settings.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I cancel my VIP Pass subscription?</h3>
+                <p>To cancel your subscription:</p>
                 <ol>
                     <li>Open iOS <strong>Settings</strong></li>
                     <li>Tap your name at the top</li>
@@ -200,122 +316,271 @@
                     <li>Select <strong>Neo Run - VIP Pass</strong></li>
                     <li>Tap <strong>Cancel Subscription</strong></li>
                 </ol>
-                You'll keep VIP benefits until the current billing period ends.
+                <p style="margin-top: 10px;">You'll keep VIP benefits until the end of the current billing period.</p>
             </div>
-        </div>
 
-        <div class="faq-item">
-            <div class="faq-question">💳 I was charged but didn't receive my purchase</div>
-            <div class="faq-answer">
-                First, try tapping "Restore Purchases" in the Store tab. If that doesn't work:
+            <div class="faq-item">
+                <h3>I made a purchase but didn't receive my items</h3>
+                <p>Try these steps:</p>
                 <ol>
-                    <li>Close and reopen the app completely</li>
-                    <li>Check your internet connection</li>
-                    <li>Verify the purchase in your Apple ID purchase history</li>
-                    <li>Contact us at hugomoriceau@icloud.com with your order details</li>
+                    <li>Close and restart the app</li>
+                    <li>Check your purchase history in the App Store</li>
+                    <li>Go to Settings → Restore Purchases in the game</li>
+                    <li>Make sure you're connected to the internet</li>
                 </ol>
-                All purchases go through Apple, so you can also contact Apple Support 
-                for payment issues.
+                <p style="margin-top: 10px;">
+                    Still having issues? Contact us with your receipt and we'll help! All purchases go through
+                    Apple, so you can also contact Apple Support for payment issues.
+                </p>
             </div>
-        </div>
 
-        <div class="faq-item">
-            <div class="faq-question">🎮 The game is lagging or crashing</div>
-            <div class="faq-answer">
-                Try these steps:
+            <div class="faq-item">
+                <h3>How do I restore purchases on a new device?</h3>
+                <p>All your purchases are linked to your Apple ID and can be restored for free:</p>
+                <ol>
+                    <li>Download Neo Run on your new device</li>
+                    <li>Sign in with the same Apple ID you used for purchases</li>
+                    <li>Open the game and go to Settings</li>
+                    <li>Tap "Restore Purchases"</li>
+                    <li>Your purchases will be restored!</li>
+                </ol>
+            </div>
+
+            <div class="faq-item">
+                <h3>My game progress was lost. Can I recover it?</h3>
+                <p>
+                    If you enabled iCloud sync, your progress should automatically restore when you
+                    reinstall the app on the same Apple ID account.
+                </p>
+                <p><strong>To enable iCloud sync:</strong></p>
                 <ul>
-                    <li>Close other apps running in the background</li>
-                    <li>Restart your device</li>
-                    <li>Update to the latest iOS version</li>
-                    <li>Make sure you have the latest Neo Run version from the App Store</li>
-                    <li>Try turning off some visual effects in Settings</li>
+                    <li>iOS Settings → [Your Name] → iCloud</li>
+                    <li>Make sure "Neo Run" is enabled</li>
                 </ul>
-                If issues persist, email us your device model and iOS version.
+                <div class="tip-box">
+                    <strong><span aria-hidden="true">⚠️</span> Important:</strong> Local data is lost if you delete the app without iCloud sync enabled.
+                </div>
             </div>
-        </div>
 
-        <div class="faq-item">
-            <div class="faq-question">🔊 How do I turn off sound/music?</div>
-            <div class="faq-answer">
-                Tap the ⚙️ Settings icon on the main menu. From there you can toggle:
+            <div class="faq-item">
+                <h3>How do leaderboards work?</h3>
+                <p>
+                    Leaderboards use Apple Game Center to show your best score compared to other players.
+                    Your high score is automatically submitted when you beat your personal record. Game Center
+                    is optional — you can play without signing in.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I turn off sound, music, or haptics?</h3>
+                <p>Tap the <span aria-hidden="true">⚙️</span> Settings icon on the main menu. From there you can toggle:</p>
                 <ul>
                     <li>Sound Effects (on/off)</li>
                     <li>Background Music (on/off)</li>
                     <li>Haptic Feedback (on/off)</li>
                 </ul>
             </div>
-        </div>
 
-        <div class="faq-item">
-            <div class="faq-question">🏆 How do leaderboards work?</div>
-            <div class="faq-answer">
-                Leaderboards show your best score compared to other players. Your high 
-                score is automatically submitted when you beat your personal record. 
-                Leaderboards are updated in real-time.
+            <div class="faq-item">
+                <h3>The game is lagging or crashing</h3>
+                <p>Try these solutions:</p>
+                <ol>
+                    <li><strong>Restart the app</strong> — Close completely and reopen</li>
+                    <li><strong>Restart your device</strong> — Turn it off and on</li>
+                    <li><strong>Update the app</strong> — Check for updates in the App Store</li>
+                    <li><strong>Update iOS</strong> — Make sure you're running the latest iOS version</li>
+                    <li><strong>Free up storage</strong> — Delete unused apps or photos</li>
+                    <li><strong>Close background apps</strong> — Swipe up to close other apps</li>
+                </ol>
+                <p style="margin-top: 10px;">
+                    Still experiencing issues? Contact us with your device model and iOS version.
+                </p>
             </div>
-        </div>
 
-        <div class="faq-item">
-            <div class="faq-question">🔒 Privacy & Data</div>
-            <div class="faq-answer">
-                Neo Run collects minimal data:
+            <div class="faq-item">
+                <h3>Can I play offline?</h3>
+                <p>
+                    Yes! Neo Run works completely offline. You don't need an internet connection
+                    to play. However, you'll need internet to:
+                </p>
                 <ul>
-                    <li>Device ID and Advertising ID (for personalized ads)</li>
-                    <li>Ad interaction data</li>
+                    <li>Make in-app purchases</li>
+                    <li>Sync progress with iCloud</li>
+                    <li>Submit scores to Game Center leaderboards</li>
+                    <li>Update the app</li>
                 </ul>
-                We do NOT collect your name, email, location, photos, or contacts. 
-                You can opt-out of tracking in iOS Settings → Privacy → Tracking.
-                <br><br>
-                Read our full <a href="privacy-policy.html">Privacy Policy</a>.
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I delete my game data?</h3>
+                <p>To reset your progress:</p>
+                <ul>
+                    <li><strong>In-game:</strong> Settings → Reset Progress</li>
+                    <li><strong>Complete removal:</strong> Delete the Neo Run app from your device</li>
+                </ul>
+                <div class="tip-box">
+                    <strong><span aria-hidden="true">⚠️</span> Warning:</strong> This action cannot be undone!
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h3>Is Neo Run safe for children?</h3>
+                <p>Yes! Neo Run is rated 4+ and appropriate for all ages. The game features:</p>
+                <ul>
+                    <li>✅ No violence or inappropriate content</li>
+                    <li>✅ No online multiplayer or chat</li>
+                    <li>✅ No collection of personal information</li>
+                    <li>✅ No third-party advertising</li>
+                    <li>✅ Family-friendly gameplay</li>
+                </ul>
+                <p><strong>Parents:</strong> You can restrict in-app purchases using iOS Parental Controls.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I request a refund?</h3>
+                <p>All purchases are processed by Apple. To request a refund:</p>
+                <ol>
+                    <li>Go to <strong>reportaproblem.apple.com</strong></li>
+                    <li>Sign in with your Apple ID</li>
+                    <li>Find your Neo Run purchase</li>
+                    <li>Click "Report a Problem"</li>
+                    <li>Select "Request a refund"</li>
+                    <li>Choose a reason and submit</li>
+                </ol>
+                <p style="margin-top: 10px;">Apple usually responds within 48 hours.</p>
             </div>
         </div>
 
-        <h2>📱 Technical Requirements</h2>
-        <ul>
-            <li><strong>Platform:</strong> iOS 14.0 or later</li>
-            <li><strong>Compatible with:</strong> iPhone, iPad, iPod touch</li>
-            <li><strong>Storage:</strong> Approximately 150 MB</li>
-            <li><strong>Internet:</strong> Required for ads and leaderboards</li>
-        </ul>
+        <div class="section">
+            <h2><span aria-hidden="true">🎯</span> Game Tips &amp; Tricks</h2>
 
-        <h2>📝 Report a Bug</h2>
-        <p>
-            Found a bug? Help us improve Neo Run! Email us at 
-            <a href="mailto:hugomoriceau@icloud.com">hugomoriceau@icloud.com</a> with:
-        </p>
-        <ul>
-            <li>Description of the bug</li>
-            <li>What you were doing when it happened</li>
-            <li>Your device model (e.g., iPhone 15 Pro)</li>
-            <li>iOS version (Settings → General → About)</li>
-            <li>Screenshot or video if possible</li>
-        </ul>
+            <div class="grid">
+                <div class="card">
+                    <h3><span aria-hidden="true">🪙</span> Maximize Coins</h3>
+                    <p>Jump to collect coin lines and build combos for bonus multipliers!</p>
+                </div>
 
-        <h2>💡 Feature Requests</h2>
-        <p>
-            Have an idea for a new feature? We'd love to hear it! Email your suggestions 
-            to <a href="mailto:hugomoriceau@icloud.com">hugomoriceau@icloud.com</a>
-        </p>
+                <div class="card">
+                    <h3><span aria-hidden="true">⚡</span> Perfect Timing</h3>
+                    <p>Master the rhythm of obstacles. Timing is everything!</p>
+                </div>
 
-        <h2>🌍 Language Support</h2>
-        <p>
-            Neo Run is available in 21+ languages including:
-        </p>
-        <p>
-            English, French, German, Spanish, Italian, Portuguese, Dutch, Russian, 
-            Japanese, Korean, Chinese (Simplified & Traditional), Arabic, Hindi, 
-            Turkish, Polish, Swedish, and more!
-        </p>
+                <div class="card">
+                    <h3><span aria-hidden="true">🎯</span> Complete Missions</h3>
+                    <p>Daily missions give huge XP and coin rewards. Don't miss them!</p>
+                </div>
 
-        <div class="game-info">
-            <p><strong>Neo Run</strong></p>
-            <p>Version 1.0.1</p>
-            <p>Developed by NeoRunCubeLab</p>
-            <p>© 2025 All Rights Reserved</p>
-            <p style="margin-top: 20px;">
-                <a href="privacy-policy.html">Privacy Policy</a> | 
+                <div class="card">
+                    <h3><span aria-hidden="true">🛡️</span> Use Power-Ups Wisely</h3>
+                    <p>Save shields for difficult sections with many obstacles.</p>
+                </div>
+
+                <div class="card">
+                    <h3><span aria-hidden="true">👑</span> VIP Benefits</h3>
+                    <p>VIP Pass doubles your XP and coins for faster progression!</p>
+                </div>
+
+                <div class="card">
+                    <h3><span aria-hidden="true">🎨</span> Unlock Skins</h3>
+                    <p>Customize your cube! Collect all 20+ unique skins.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><span aria-hidden="true">📱</span> System Requirements</h2>
+            <div class="faq-item">
+                <p><strong>Minimum:</strong></p>
+                <ul>
+                    <li>iOS 14.0 or later</li>
+                    <li>iPhone 6s or newer</li>
+                    <li>iPad (5th generation) or newer</li>
+                    <li>iPod touch (7th generation)</li>
+                    <li>Approximately 150 MB free storage</li>
+                </ul>
+                <p style="margin-top: 15px;"><strong>Recommended:</strong></p>
+                <ul>
+                    <li>iOS 15.0 or later</li>
+                    <li>iPhone 8 or newer for best performance</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><span aria-hidden="true">🌍</span> Language Support</h2>
+            <div class="faq-item">
+                <p>Neo Run is available in 21+ languages, including:</p>
+                <p style="margin-top: 10px;">
+                    English, French, German, Spanish, Italian, Portuguese, Dutch, Russian,
+                    Japanese, Korean, Chinese (Simplified &amp; Traditional), Arabic, Hindi,
+                    Turkish, Polish, Swedish, and more!
+                </p>
+            </div>
+        </div>
+
+        <div class="contact-box">
+            <h2><span aria-hidden="true">📧</span> Still Need Help?</h2>
+            <p>Can't find the answer to your question?</p>
+            <p>We're here to help!</p>
+
+            <div class="email">
+                Contact us at:<br>
+                <a href="mailto:hugomoriceau@icloud.com">hugomoriceau@icloud.com</a>
+            </div>
+
+            <p style="margin-top: 20px; font-size: 0.95em; opacity: 0.9;">
+                <strong>Response Time:</strong> We typically respond within 24-48 hours
+            </p>
+
+            <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.85;">
+                When contacting us, please include:
+            </p>
+            <ul style="list-style: none; margin-top: 10px; font-size: 0.9em; opacity: 0.85;">
+                <li>• Your device model (e.g., iPhone 13)</li>
+                <li>• iOS version (e.g., iOS 16.2)</li>
+                <li>• App version (found in Settings)</li>
+                <li>• Description of the issue</li>
+                <li>• Screenshot if applicable</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><span aria-hidden="true">🔗</span> Useful Links</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3><span aria-hidden="true">📜</span> Privacy Policy</h3>
+                    <p>Learn how we protect your data</p>
+                    <p style="margin-top: 10px;">
+                        <a href="privacy-policy.html">View Policy →</a>
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3><span aria-hidden="true">💡</span> Feature Requests</h3>
+                    <p>Have an idea? We'd love to hear it!</p>
+                    <p style="margin-top: 10px;">
+                        <a href="mailto:hugomoriceau@icloud.com?subject=Neo%20Run%20Feature%20Request">Send Idea →</a>
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3><span aria-hidden="true">🐞</span> Report a Bug</h3>
+                    <p>Help us improve the game</p>
+                    <p style="margin-top: 10px;">
+                        <a href="mailto:hugomoriceau@icloud.com?subject=Neo%20Run%20Bug%20Report">Report Issue →</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 NeoRunCubeLab. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="index.html">Home</a> •
+                <a href="privacy-policy.html">Privacy Policy</a> •
                 <a href="mailto:hugomoriceau@icloud.com">Contact</a>
             </p>
+            <p style="margin-top: 15px; color: #999;">Neo Run v1.0.1</p>
         </div>
     </div>
 </body>
